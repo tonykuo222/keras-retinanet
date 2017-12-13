@@ -3,6 +3,14 @@ import numpy as np
 DEFAULT_PRNG = np.random
 
 
+def vec2(x, y):
+    return np.array([[x], [y]])
+
+
+def vec3(x, y, z):
+    return np.array([[x], [y], [z]])
+
+
 def identity():
     """ Construct a 3x3 identity matrix. """
     return np.identity(3)
